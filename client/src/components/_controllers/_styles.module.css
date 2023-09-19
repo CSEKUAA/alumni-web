@@ -1,0 +1,20 @@
+.radio_container {
+    color: theme('colors.primary.main');
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+}
+
+.radio_option {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.radio_label {
+    font-size: theme('fontSize.base');
+    font-weight: theme('fontWeight.medium');
+    text-align: start;
+    margin-bottom: 5px;
+}

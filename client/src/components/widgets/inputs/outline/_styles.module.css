@@ -9,7 +9,10 @@
 }
 
 .label {
-    font-size: theme('fontSize.lg');
+    font-size: theme('fontSize.base');
+    font-weight: theme('fontWeight.medium');
+    text-align: start;
+    margin-bottom: 5px;
 }
 
 .helper_message {

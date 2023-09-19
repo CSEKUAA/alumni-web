@@ -1,0 +1,26 @@
+.container {
+  color: theme('colors.primary.main');
+  margin-top: 15px;
+}
+
+.custom_file_upload {
+    padding: 10px 20px;
+    background-color: theme('colors.primary.light');
+    font-weight: theme('fontWeight.medium');
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.error {
+  color: theme('colors.error.main');
+}

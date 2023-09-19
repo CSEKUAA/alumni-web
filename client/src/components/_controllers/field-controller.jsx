@@ -3,7 +3,7 @@ import React, { forwardRef } from "react";
 import { Controller } from "react-hook-form";
 
 const FieldController = forwardRef((props, ref) => {
-  const { children, rules, ...others } = props;
+  const { children, rules, width, ...others } = props;
   const required = Boolean(rules?.required);
   return (
     <Controller
@@ -16,6 +16,7 @@ const FieldController = forwardRef((props, ref) => {
               required: required,
               error: Boolean(error),
               helperText: error?.message,
+              style: { width: width || '100%' },
             }),
           )}
         </>
@@ -29,6 +30,7 @@ const FieldController = forwardRef((props, ref) => {
 FieldController.propTypes = {
   children: PropTypes.node,
   rules: PropTypes.object,
+  width: PropTypes.string,
 };
 
 export default FieldController;

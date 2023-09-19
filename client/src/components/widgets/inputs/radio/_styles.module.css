@@ -1,0 +1,7 @@
+.container {
+    color: theme('colors.primary.main');
+}
+
+.error {
+    color: theme('colors.error.main');
+}

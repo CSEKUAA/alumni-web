@@ -1,7 +1,10 @@
 .container {
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: column;
     color: theme('colors.primary.main');
+    width: 100%;
 }
 
 .error {
@@ -9,7 +12,8 @@
 }
 
 .label {
-    font-size: theme('fontSize.lg');
+    font-size: theme('fontSize.base');
+    margin-left: 0px;
 }
 
 .helper_message {
@@ -19,8 +23,9 @@
 
 .flex_row {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    flex-direction: row;
+    align-items: start;
+    gap: 10px;
 }
 
 .checkbox {
@@ -28,11 +33,12 @@
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
     border: 1px solid;
     cursor: pointer;
+    margin-top: 4px;
 }
 
 .checkbox:checked {
@@ -43,7 +49,7 @@
     content: '\2713';
     color: theme('colors.common.white');
     position: absolute;
-    line-height: 1rem;
-    font-size: 1rem;
-    padding-left: 0.15rem;
+    line-height: .8rem;
+    font-size: .8rem;
+    padding-left: 0.08rem;
 }
